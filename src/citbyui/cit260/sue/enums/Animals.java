@@ -10,16 +10,16 @@ package citbyui.cit260.sue.enums;
  * @author Sue
  */
 public enum Animals {
-    
+
     Elephants("Large mammal with a trunk"),
     Zebra("Size of a horse with stripes"),
     Giraffe("Long neck, runs fast"),
     Rhino("Large gray animal with a horn"),
     Lion("Large cat with a mane");
-    
+
     public String description;
-    
-    Animals(String description){
+
+    Animals(String description) {
         this.description = description;
     }
 }

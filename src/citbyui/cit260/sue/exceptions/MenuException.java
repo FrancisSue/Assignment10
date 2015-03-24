@@ -3,13 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package citbyui.cit260.sue.interfaces;
+package citbyui.cit260.sue.exceptions;
 
 /**
  *
  * @author Sue
  */
-public interface DisplayInfo {
+public class MenuException extends Exception {
 
-    void display();
+    public MenuException(String message) {
+        super(message);
+    }
+
 }

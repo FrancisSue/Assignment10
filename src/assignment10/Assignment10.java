@@ -6,6 +6,7 @@
 package assignment10;
 
 import citbyui.cit260.sue.views.Stuff;
+import citbyui.cit260.sue.exceptions.MenuException;
 
 /**
  *
@@ -17,11 +18,23 @@ public class Assignment10 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Stuff menu = new Stuff();
-        menu.getInput();
-        menu.display();
-        
-        
+        try {
+            Stuff menu = new Stuff();
+            try {
+
+                menu.getInput();
+                menu.display();
+
+            } catch (MenuException ex) {
+                System.out.println(ex.getMessage());
+            }
+
+        } catch (Throwable ex) {
+            System.err.println("Unexpected runtime error: " + ex.getMessage());
+            ex.printStackTrace();
+        } finally {
+            //Close input file
+        }
     }
-    
+
 }

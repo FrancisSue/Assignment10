@@ -5,10 +5,13 @@
  */
 package citbyui.cit260.sue.interfaces;
 
+import citbyui.cit260.sue.exceptions.MenuException;
+
 /**
  *
  * @author Sue
  */
 public interface EnterInfo {
-    void getInput();
+
+    void getInput() throws MenuException;
 }

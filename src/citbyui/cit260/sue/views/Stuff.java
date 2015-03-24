@@ -10,6 +10,5 @@ package citbyui.cit260.sue.views;
  * @author Sue
  */
 public class Stuff extends Menu {
-    
-    
+
 }
